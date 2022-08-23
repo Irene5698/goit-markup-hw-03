@@ -27,6 +27,22 @@ body {
   background-color: var(--accent-background-color);
 }
 
+/* Reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -34,7 +50,7 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -65,7 +81,8 @@ body {
 }
 
 .header .mail {
-color: var(--secondary-text-color);
+  margin-right: 50px;
+  color: var(--secondary-text-color);
 }
 /* Logo */
 
@@ -84,27 +101,39 @@ color: var(--secondary-text-color);
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
+  color: currentColor;
 }
 
 /* Main */
 
 .hero {
   background-color: var(--secondary-background-color);
+  outline: 2px solid tomato;
 }
 .hero-title {
+  margin-bottom: 30px;
   color: var(--white-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
+  outline: 2px solid tomato;
 }
 /* button */
 .button {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 216px;
+  min-height: 50px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--white-text-color);
   background-color: var(--accent-text-color);
   font-weight: 700;
@@ -116,6 +145,7 @@ a {
   letter-spacing: 0.06em;
   cursor: pointer;
   font-family: inherit;
+  outline: 2px solid tomato;
 }
 
 /* Main */
@@ -126,6 +156,8 @@ a {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   text-transform: uppercase;
+  margin-bottom: 10px;
+  outline: 2px solid tomato;
 }
 
 .section .feature-text {
@@ -134,32 +166,42 @@ a {
 }
 
 .section-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  outline: 2px solid tomato;
 }
 
 /* team */
 
+.team-img {
+  margin-bottom: 30px;
+}
+
 .section-title-team {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  outline: 2px solid tomato;
 }
 
 .team .title-team {
+  margin: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  outline: 2px solid tomato;
 }
 
 .team-text {
@@ -170,10 +212,13 @@ a {
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
+  outline: 2px solid tomato;
 }
 
 .our-team {
   background: var(--grey-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-item {
@@ -229,6 +274,7 @@ footer {
 /* Buttons */
 
 .section-portfolio .button {
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -239,6 +285,32 @@ footer {
   background-color: var(--grey-background-color);
 }
 
+.first-button {
+min-width: 23px;
+min-height: 26 px;
+padding: 6px 25px;
+}
+.secondary-button {
+min-width: 81px;
+min-height: 26px;
+padding: 6px 22px;
+}
+.third-button {
+min-width: 68px;
+min-height: 26px;
+padding: 6px 22px;
+}
+.fourth-button {
+min-width: 59px;
+min-height: 26px;
+padding: 6px 22px;
+}
+.fifth-button {
+min-width: 86px;
+min-height: 26px;
+padding: 6px 26px;
+}
+
 .section-portfolio .button:hover,
 .section-portfolio .button:focus {
   color: var(--white-text-color);
@@ -246,6 +318,7 @@ footer {
 }
 
 .section-portfolio .title {
+  padding-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -263,4 +336,8 @@ footer {
 .section-portfolio .list-item-images {
   background: #ffffff;
   border: 1px solid #eeeeee;
+}
+
+.portfolio-img {
+  padding-bottom: 20px;
 }

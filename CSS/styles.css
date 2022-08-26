@@ -67,7 +67,7 @@ img {
 /*Main-nav*/
 .main-nav {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 .nav-link {
   display: flex;
@@ -94,10 +94,10 @@ img {
 .auth-nav {
   display: flex;
   margin-left: auto;
-  }
-  .tel {
-    margin-left: 50px;
-  }
+}
+.tel {
+  margin-left: 50px;
+}
 .header .link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -118,7 +118,6 @@ img {
 .item .tel {
   color: var(--secondary-text-color);
   font-weight: 500;
-
 }
 .tel:hover,
 .tel:focus {
@@ -127,9 +126,7 @@ img {
 
 .header .mail {
   color: var(--secondary-text-color);
-
 }
-
 
 /* Logo */
 
@@ -193,7 +190,6 @@ a {
   font-family: inherit;
 }
 
-
 /* Main */
 .section .title {
   font-weight: 700;
@@ -223,7 +219,6 @@ a {
 .section-title-list {
   gap: 30px;
 }
-
 
 .section-title {
   margin-bottom: 50px;
@@ -366,29 +361,29 @@ footer {
 }
 
 .first-button {
-min-width: 23px;
-min-height: 26px;
-padding: 6px 25px;
+  min-width: 23px;
+  min-height: 26px;
+  padding: 6px 25px;
 }
 .secondary-button {
-min-width: 81px;
-min-height: 26px;
-padding: 6px 22px;
+  min-width: 81px;
+  min-height: 26px;
+  padding: 6px 22px;
 }
 .third-button {
-min-width: 68px;
-min-height: 26px;
-padding: 6px 22px;
+  min-width: 68px;
+  min-height: 26px;
+  padding: 6px 22px;
 }
 .fourth-button {
-min-width: 59px;
-min-height: 26px;
-padding: 6px 22px;
+  min-width: 59px;
+  min-height: 26px;
+  padding: 6px 22px;
 }
 .fifth-button {
-min-width: 86px;
-min-height: 26px;
-padding: 6px 26px;
+  min-width: 86px;
+  min-height: 26px;
+  padding: 6px 26px;
 }
 
 .section-portfolio .button:hover,
@@ -430,8 +425,8 @@ padding: 6px 26px;
 }
 
 .list-images {
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .list-item-images {
   width: 370px;

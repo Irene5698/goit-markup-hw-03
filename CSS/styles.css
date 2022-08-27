@@ -28,9 +28,6 @@ body {
   background-color: var(--accent-background-color);
 }
 
-.section {
-  padding: 94px 0;
-}
 /* Reset */
 
 h1,
@@ -45,6 +42,40 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  width: 1200px;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .visually-hidden {
@@ -73,12 +104,7 @@ img {
   display: flex;
   align-items: center;
 }
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
-  width: 1200px;
-}
+
 /*Site-nav*/
 
 .site-nav {
@@ -95,9 +121,10 @@ img {
   display: flex;
   margin-left: auto;
 }
-.tel {
-  margin-left: 50px;
+.auth-nav .item + .item {
+margin-left: 50px;
 }
+
 .header .link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -161,6 +188,8 @@ a {
   padding: 200px 0;
 }
 .hero-title {
+  width: 696px;
+  margin: 0 auto;
   margin-bottom: 30px;
   color: var(--white-text-color);
   font-weight: 900;
@@ -201,6 +230,7 @@ a {
   margin-bottom: 10px;
 }
 
+/* Features--> */
 .list {
   display: flex;
   justify-content: center;
@@ -215,7 +245,11 @@ a {
 .feature-list {
   display: flex;
 }
+.feature-list .feature-item + .feature-item {
+margin-left: 30px;
+}
 
+/* Чим ми займаємося */
 .section-title-list {
   gap: 30px;
 }
@@ -239,10 +273,6 @@ a {
 
 /* team */
 
-.team-img {
-  margin-bottom: 30px;
-}
-
 .team {
   display: flex;
   gap: 30px;
@@ -259,7 +289,7 @@ a {
 }
 
 .team .title-team {
-  margin: 10px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -267,9 +297,12 @@ a {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-
-.team-text {
+ 
+.team-container {
+  padding-top: 30px;
   padding-bottom: 30px;
+}
+.team-text {
   font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -312,6 +345,9 @@ footer {
 }
 .footer-item {
   margin-bottom: 9px;
+}
+.footer-mail {
+  margin-bottom: 0;
 }
 
 .address {
@@ -356,7 +392,7 @@ footer {
 }
 
 .section-portfolio .list {
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   gap: 8px;
 }
 
@@ -399,7 +435,7 @@ footer {
 }
 
 .section-portfolio .title-text {
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
@@ -412,11 +448,6 @@ footer {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--grey-text-color);
-}
-
-.section-portfolio .list-item-images {
-  display: block;
-  background: var(--accent-background-color);
 }
 
 .portfolio-img {
